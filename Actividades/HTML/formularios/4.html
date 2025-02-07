@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h2>Formulario de Camaras</h2>
+    <form action="/search_cameras" method="get">
+        <label for="model">Modelo</label><br>
+        <input type="text" id="model" name="model"><br><br>
+        
+        <label for="brand">Marca</label><br>
+        <input type="text" id="brand" name="brand"><br><br>
+        
+        <label for="price_range">Rango de Precios</label><br>
+        <select id="price_range" name="price_range">
+            <option value="0-100">0 - 100</option>
+            <option value="101-500">101 - 500</option>
+            <option value="501-1000">501 - o más</option>
+        </select><br><br>
+        
+        <label for="features">Características</label><br>
+        <input type="checkbox" id="wifi" name="features" value="Wifi">
+        <label for="wifi">Wifi</label><br>
+        <input type="checkbox" id="gps" name="features" value="gps">
+        <label for="gps">GPS</label><br>
+        <input type="checkbox" id="touchscreen" name="features" value="Pantalla Táctil">
+        <label for="touchscreen">Pantalla Táctil</label><br><br>
+        
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
